@@ -1,0 +1,69 @@
+/* Estilos de etiquetas */
+body {
+    font-family: Verdana, sans-serif; /* Fuente */
+    font-size: 12px; /* Tamaño */
+    font-weight: normal; /* Sin negrita */
+    color: black; /* Texto negro */
+    margin: 20px; /* Margen exterior */
+    background-color: #DFF5FD; /* Fondo general */
+}
+
+h1 {
+    font-family: Arial, sans-serif; /* Fuente */
+    font-size: 36px; /* Tamaño */
+    font-weight: bold; /* Negrita */
+    color: darkblue; /* Azul oscuro */
+    text-align: center; /* Centrado */
+    background-color: white; /* Fondo blanco */
+    border-top: thin solid darkblue; /* Borde superior fino */
+    border-bottom: thin solid darkblue; /* Borde inferior fino */
+    margin: 20px auto; /* Margen y centrado */
+}
+
+h2 {
+    font-size: 16px; /* Tamaño */
+    font-weight: bold; /* Negrita */
+}
+
+/* Clases para colores */
+.TimesRojo {
+    font-family: "Times New Roman", Times, serif; /* Fuente */
+    font-size: 14px; /* Tamaño */
+    font-weight: bold; /* Negrita */
+    color: red; /* Color rojo */
+}
+
+.TimesVerde {
+    font-family: "Times New Roman", Times, serif; /* Fuente */
+    font-size: 14px; /* Tamaño */
+    font-weight: bold; /* Negrita */
+    color: green; /* Color verde */
+}
+
+/* Caja 1: Datos Personales */
+#datos-personales {
+    background-color: #F5A9A9; /* Fondo rosa */
+    font-size: 14px; /* Tamaño letra */
+    color: #74030A; /* Texto granate */
+    font-family: Arial, Times, sans-serif; /* Fuente */
+    border: solid 3px #74030A; /* Borde liso de 3px */
+    padding: 15px; /* Relleno interior */
+    margin: 20px auto; /* Centrado en pantalla */
+    width: 50%; /* Ancho adaptable */
+    border-radius: 25px; /* Esquinas redondeadas */
+    box-shadow: 2px 2px 5px black; /* Sombra */
+}
+
+/* Caja 2: Formación Académica y resto */
+#formacion-academica {
+    background-color: #A9D0F5; /* Fondo azul claro */
+    font-size: 14px; /* Tamaño letra */
+    color: #0B0B61; /* Texto azul oscuro */
+    font-family: "Times New Roman", Times, serif; /* Fuente */
+    border: dotted 3px #0B0B61; /* Borde de puntos de 3px */
+    padding: 15px; /* Relleno interior */
+    margin: 20px auto; /* Centrado en pantalla */
+    width: 50%; /* Ancho adaptable */
+    border-radius: 25px; /* Esquinas redondeadas */
+    box-shadow: 2px 2px 5px black; /* Sombra */
+}
