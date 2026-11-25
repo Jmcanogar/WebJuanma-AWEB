@@ -2,9 +2,11 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <!-- Adapta el ancho y el zoom en móviles o pantallas pequeñas -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trabajos de Juanma — AWEB</title>
+  <title>Trabajos de Juanma - AWEB</title>
   <style>
+    /* Aplica a todas las etiquetas: hace que bordes y rellenos entren dentro del tamaño total y quita márgenes por defecto */
     * {
       box-sizing: border-box;
       margin: 0;
@@ -15,16 +17,19 @@
       font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
       background-color: #0f172a;
       color: #e2e8f0;
+      /* Ocupa al menos el 100% de la altura visible de la pantalla */
       min-height: 100vh;
       padding: 40px 20px;
     }
 
+    /* Centra el bloque principal y limita su ancho máximo para que no se estire demasiado */
     .contenedor {
       max-width: 760px;
       margin: 0 auto;
     }
 
     header {
+      /* Degradado de color en diagonal entre dos tonos */
       background: linear-gradient(135deg, #1e293b, #1d4ed8);
       padding: 28px 32px;
       border-radius: 14px;
@@ -43,12 +48,14 @@
       font-size: 0.98rem;
     }
 
+    /* Coloca las tarjetas en una columna con separación fija entre ellas */
     .lista-trabajos {
       list-style: none;
       display: grid;
       gap: 14px;
     }
 
+    /* Distribuye el contenido en fila y centra los elementos en vertical */
     .tarjeta-enlace {
       display: flex;
       justify-content: space-between;
@@ -59,10 +66,13 @@
       padding: 18px 22px;
       border-radius: 12px;
       border: 1px solid #334155;
+      /* Suaviza los cambios al pasar el ratón por encima */
       transition: transform 0.15s ease, border-color 0.15s ease, background-color 0.15s ease;
     }
 
+    /* Estilo cuando pasas el ratón por encima de la tarjeta */
     .tarjeta-enlace:hover {
+      /* Sube la tarjeta 2 píxeles hacia arriba */
       transform: translateY(-2px);
       border-color: #60a5fa;
       background-color: #243247;
@@ -73,6 +83,7 @@
       font-size: 1.05rem;
     }
 
+    /* Estilo de pastilla por si vuelves a usar etiquetas de ruta o aviso */
     .etiqueta-ruta {
       font-size: 0.85rem;
       color: #93c5fd;
@@ -86,26 +97,29 @@
   <div class="contenedor">
     <header>
       <h1>Mis trabajos de AWEB</h1>
-      <p>Juan Manuel Cano García — Portada de prácticas en GitHub Pages</p>
+      <p>Juan Manuel Cano García - Portada de prácticas en GitHub Pages</p>
     </header>
 
     <ul class="lista-trabajos">
       <li>
+        <!-- %20 sustituye los espacios en la ruta para que el enlace funcione bien en web -->
         <a class="tarjeta-enlace" href="ejercicio1-Texto%20y%20etiquetas%20CSS/index.html">
-          <span class="titulo-trabajo">Práctica 1 — Texto y etiquetas CSS</span>
+          <span class="titulo-trabajo">Práctica 1 - Texto y etiquetas CSS</span>
         </a>
       </li>
       <li>
         <a class="tarjeta-enlace" href="ejercicio2-curriculum/index.html">
-          <span class="titulo-trabajo">Práctica 2 — Lista, div y class e id</span>
+          <span class="titulo-trabajo">Práctica 2 - Lista, div y class e id</span>
         </a>
       </li>
       <li>
+        <!-- %2C representa la coma del nombre de la carpeta en la URL -->
         <a class="tarjeta-enlace" href="ejercicio3-Enlaces%2C%20menu%20y%20clases%20CSS/principal.html">
-          <span class="titulo-trabajo">Práctica 3 — Enlaces, menu y clases CSS</span>
+          <span class="titulo-trabajo">Práctica 3 - Enlaces, menu y clases CSS</span>
         </a>
       </li>
       <li>
+        <!-- target="_blank" abre en pestaña nueva y rel evita que la otra página pueda controlar esta pestaña -->
         <a class="tarjeta-enlace" href="https://drive.google.com/drive/folders/1eCr6JtseqxcLw25p8fBAzMcN4QWt0OYt?usp=sharing" target="_blank" rel="noopener noreferrer">
           <span class="titulo-trabajo">Carpeta de Google Drive</span>
         </a>
